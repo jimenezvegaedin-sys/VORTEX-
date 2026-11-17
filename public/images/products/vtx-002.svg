@@ -1,0 +1,11 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f7f9fc"/><stop offset="100%" stop-color="#dfe9f3"/></linearGradient></defs>
+  <rect width="600" height="400" fill="url(#g)"/>
+  <rect x="140" y="90" width="320" height="220" rx="18" fill="#c8d6e5"/>
+  <rect x="180" y="130" width="100" height="140" rx="10" fill="#8fa6bc"/>
+  <rect x="320" y="130" width="100" height="140" rx="10" fill="#7f98b0"/>
+  <rect x="170" y="60" width="260" height="22" rx="8" fill="#b9c9d9"/>
+  <rect x="110" y="320" width="380" height="28" rx="10" fill="#234761"/>
+  <circle cx="230" cy="175" r="14" fill="#102A43"/><circle cx="370" cy="175" r="14" fill="#102A43"/>
+  <text x="300" y="372" text-anchor="middle" font-family="Inter,Arial" font-size="22" fill="#234761">Equipo demostrativo</text>
+</svg>

@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700&family=Oxanium:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+  --oc-black: #141212;
+  --oc-dark: #1f1d1d;
+  --oc-dark-2: #2a2727;
+  --oc-red: #E2231A;
+  --oc-gray: #6b6b6b;
+  --oc-gray-light: #c9c9c9;
+  --oc-border: #e5e5e5;
+  --oc-bg: #ffffff;
+  --oc-bg-soft: #f5f5f5;
+
+  --navy: #141212;
+  --navy-2: #1f1d1d;
+  --slate: #444444;
+  --accent: #E2231A;
+  --accent-soft: #fdeceb;
+  --amber: #b7791f;
+  --white: #ffffff;
+  --bg: #ffffff;
+  --bg-soft: #f5f5f5;
+  --bg-muted: #efefef;
+  --border: #e5e5e5;
+  --text: #141212;
+  --text-muted: #555555;
+  --danger: #b42318;
+  --success: #0f766e;
+
+  --blue-night: var(--navy);
+  --blue-corporate: var(--navy);
+  --blue-steel: var(--slate);
+  --turquoise: var(--accent);
+  --turquoise-deep: #b91c15;
+  --white-blue: var(--bg-soft);
+  --gray-surface: var(--bg-muted);
+  --gray-border: var(--border);
+  --gray-text: var(--text-muted);
+  --text-dark: var(--text);
+
+  --font-heading: 'Oxanium', 'Alexandria', sans-serif;
+  --font-subheading: 'Alexandria', sans-serif;
+  --font-body: 'Roboto', system-ui, sans-serif;
+  --font-mono: ui-monospace, monospace;
+
+  --container: 1200px;
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --shadow-sm: 0 4px 12px rgba(0,0,0,.08);
+  --shadow-md: 0 10px 24px rgba(0,0,0,.12);
+  --transition: 200ms ease;
+}

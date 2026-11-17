@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /
+# Proyecto demostrativo en fase de pruebas
+Sitemap: /sitemap.xml

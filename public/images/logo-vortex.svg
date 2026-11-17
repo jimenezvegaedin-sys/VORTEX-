@@ -1,0 +1,8 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 56" width="260" height="56" fill="none">
+  <rect x="0" y="8" width="40" height="40" rx="4" fill="#141212"/>
+  <path d="M9 38L20 18H26L15 38H9Z" fill="#E2231A"/>
+  <path d="M18 38L29 18H35L24 38H18Z" fill="#FFFFFF"/>
+  <path d="M4 28H44" stroke="#E2231A" stroke-width="2"/>
+  <text x="52" y="30" font-family="Oxanium, Arial Black, sans-serif" font-size="24" font-weight="700" fill="#141212" letter-spacing="1">VORTEX</text>
+  <text x="53" y="46" font-family="Alexandria, Arial, sans-serif" font-size="11" font-weight="600" fill="#444444" letter-spacing="2.5">JFSCM S.A.C.</text>
+</svg>
