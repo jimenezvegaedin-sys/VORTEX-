@@ -2,7 +2,7 @@
 import SectionHeading from "../components/ui/SectionHeading";
 import { company } from "../data/company";
 import { validateContactForm } from "../utils/validation";
-import { MapPin, Mail, Clock, Copy } from "lucide-react";
+import { MapPin, Mail, Clock, Copy, Phone } from "lucide-react";
 
 export default function Contact() {
   const [form, setForm] = useState({ name:'', email:'', subject:'', message:'', accept:false });
@@ -29,7 +29,8 @@ export default function Contact() {
           <div>
             <div className="card" style={{marginBottom:16}}><div className="card-body" style={{display:"grid",gap:14}}>
               <div style={{display:"flex",gap:10}}><MapPin color="var(--oc-red)"/><div><strong>Ubicación</strong><p style={{margin:0}}>{company.contact.location}</p></div></div>
-              <div style={{display:"flex",gap:10}}><Mail color="var(--oc-red)"/><div><strong>Correos de prueba</strong><p style={{margin:0}}>{company.contact.email}<br/>{company.contact.sales}</p></div></div>
+              <div style={{display:"flex",gap:10}}><Phone color="var(--oc-red)"/><div><strong>Teléfono</strong><p style={{margin:0}}><a href="tel:+51910062007">{company.contact.phone}</a></p></div></div>
+              <div style={{display:"flex",gap:10}}><Mail color="var(--oc-red)"/><div><strong>Correos de referencia</strong><p style={{margin:0}}>{company.contact.email}<br/>{company.contact.sales}<br/>{company.contact.institutionalEmail}</p></div></div>
               <div style={{display:"flex",gap:10}}><Clock color="var(--oc-red)"/><div><strong>Horario simulado</strong><p style={{margin:0}}>{company.contact.hoursWeek}<br/>{company.contact.hoursSat}</p></div></div>
             </div></div>
             <div className="card"><div className="card-body">
@@ -37,7 +38,7 @@ export default function Contact() {
               <div style={{borderRadius:12,overflow:"hidden",border:"1px solid var(--gray-border)",background:"var(--gray-surface)",aspectRatio:"16/10",display:"flex",alignItems:"center",justifyContent:"center",textAlign:"center",padding:20}}>
                 <div><MapPin size={32} color="var(--oc-red)"/><p style={{margin:"8px 0 0"}}><strong>Jaén, Cajamarca, Perú</strong><br/><span className="muted">Referencia geográfica general (sin dirección exacta).</span></p></div>
               </div>
-              <p className="muted" style={{marginTop:10,fontSize:".9rem"}}>No se muestran números telefónicos ni direcciones exactas inexistentes.</p>
+              <p className="muted" style={{marginTop:10,fontSize:".9rem"}}>Datos de contacto de referencia para el prototipo académico; no se muestra una dirección exacta inexistente.</p>
             </div></div>
           </div>
           <div>

@@ -14,7 +14,7 @@ export default function Layout({ children }) {
       <div className="top-bar">
         <div className="container top-bar-inner">
           <span>Proyecto demostrativo — Información simulada</span>
-          <span>Jaén, Cajamarca, Perú · contacto@vortexjfscm.example</span>
+          <span>Jaén, Cajamarca, Perú · 910 062 007 · contacto@vortexjfscm.example</span>
         </div>
       </div>
       <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />

@@ -1,5 +1,5 @@
 ﻿import { Link } from "react-router-dom";
-import { Globe, Share2, MapPin, Mail, Clock } from "lucide-react";
+import { Globe, Share2, MapPin, Mail, Clock, Phone } from "lucide-react";
 import { company } from "../../data/company";
 
 export default function Footer() {
@@ -16,7 +16,7 @@ export default function Footer() {
       </div>
       <div className="container footer-main">
         <div className="footer-col footer-brand">
-          <img src="/images/logo-vortex.svg" alt="VORTEX JFSCM" className="footer-logo" />
+          <img src="/images/logo-vortex-white.svg" alt="VORTEX JFSCM" className="footer-logo" />
           <p className="footer-tagline">{company.slogan}</p>
           <div className="footer-social" aria-label="Redes sociales (demostrativas)">
             <a href="#" aria-label="Sitio" onClick={(e)=>e.preventDefault()}><Globe size={18} /></a>
@@ -33,8 +33,10 @@ export default function Footer() {
         </div>
         <div className="footer-col">
           <h4>Contacto</h4>
-          <p><Mail size={15} className="footer-icon" /> {company.contact.email}</p>
-          <p style={{paddingLeft:23}}>{company.contact.sales}</p>
+          <p><Phone size={15} className="footer-icon" /> <a href="tel:+51910062007">{company.contact.phone}</a></p>
+          <p><Mail size={15} className="footer-icon" /> <a href={`mailto:${company.contact.email}`}>{company.contact.email}</a></p>
+          <p style={{paddingLeft:23}}><a href={`mailto:${company.contact.sales}`}>{company.contact.sales}</a></p>
+          <p style={{paddingLeft:23}}><a href={`mailto:${company.contact.institutionalEmail}`}>{company.contact.institutionalEmail}</a></p>
           <h4 style={{marginTop:18}}>Enlaces</h4>
           <p><Link to="/productos">Productos</Link></p>
           <p><Link to="/servicios">Servicios</Link></p>

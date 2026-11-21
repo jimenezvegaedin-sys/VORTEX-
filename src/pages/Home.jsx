@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, BadgeCheck, Bolt, Cog, Factory, HardHat, Leaf, Wrench, CheckCircle2, Zap, Building2 } from "lucide-react";
+import { ArrowRight, BadgeCheck, Bolt, Cog, Factory, HardHat, Leaf, Wrench, Zap, Building2 } from "lucide-react";
 import SectionHeading from "../components/ui/SectionHeading";
 import Accordion from "../components/ui/Accordion";
 import ProductGrid from "../components/products/ProductGrid";
@@ -20,10 +20,10 @@ export default function Home() {
     { icon: Bolt, title: "Ingeniería y automatización", text: "Integración de energía, control y operación." },
   ];
   const industries = [
-    { icon: Factory, name: "Industria", text: "Suministro y transformación para procesos productivos.", img: "/images/projects/proyecto-1.jpg" },
-    { icon: Leaf, name: "Agroindustria", text: "Aplicaciones en plantas y operaciones agroalimentarias.", img: "/images/projects/proyecto-2.jpg" },
-    { icon: HardHat, name: "Construcción e infraestructura", text: "Equipamiento para infraestructura eléctrica.", img: "/images/projects/proyecto-4.jpg" },
-    { icon: Building2, name: "Distribución eléctrica", text: "Componentes y soluciones para redes de distribución.", img: "/images/projects/proyecto-3.jpg" },
+    { icon: Factory, name: "Industria", text: "Suministro y transformación para procesos productivos.", img: "/images/products/transformador-trifasico-pad-a.jpg" },
+    { icon: Leaf, name: "Agroindustria", text: "Aplicaciones en plantas y operaciones agroalimentarias.", img: "/images/projects/proyecto-distribucion.jpg" },
+    { icon: HardHat, name: "Construcción e infraestructura", text: "Equipamiento para infraestructura eléctrica.", img: "/images/products/transformador-seco-resina-a.jpg" },
+    { icon: Building2, name: "Distribución eléctrica", text: "Componentes y soluciones para redes de distribución.", img: "/images/products/transformador-distribucion-630.jpg" },
   ];
   const steps = [
     { n: "01", t: "Explora equipos y servicios", d: "Revisa el catálogo y las soluciones disponibles." },
@@ -36,7 +36,7 @@ export default function Home() {
     <>
       <section className="hero">
         <div className="hero-bg">
-          <img src="/images/hero/hero-main.jpg" alt="Infraestructura eléctrica industrial" />
+          <img src="/images/hero/hero-subestacion.jpg" alt="Interior de transformador: núcleo y bobinados" />
         </div>
         <div className="hero-overlay"></div>
         <div className="container">
@@ -76,7 +76,7 @@ export default function Home() {
       <section className="section section-alt reveal">
         <div className="container" style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(300px,1fr))",gap:48,alignItems:"center"}}>
           <div className="split-media">
-            <img src="/images/services/servicio-5.jpg" alt="Ingeniería eléctrica" />
+            <img src="/images/hero/hero-industrial.jpg" alt="Bobinado de transformador en fabricación" />
           </div>
           <div>
             <SectionHeading eyebrow="Sobre la empresa" accent="Nuestra" title="visión de ingeniería" text="VORTEX JFSCM es una propuesta empresarial orientada a la comercialización de transformadores y soluciones técnicas, con un enfoque demostrativo que integra equipamiento, servicios e ingeniería." />

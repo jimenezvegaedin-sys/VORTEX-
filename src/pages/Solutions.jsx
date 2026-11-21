@@ -5,16 +5,16 @@ import { products } from "../data/products";
 import { services } from "../data/services";
 
 const sectors = [
-  { name:'Industria', img:'/images/projects/proyecto-1.jpg', needs:['Continuidad operativa','Distribución confiable','Control y protección'], solutions:['Transformadores trifásicos','Tableros y regulación','Servicios de mantenimiento e ingeniería'], prods:['VTX-006','VTX-008','VTX-020'], svcs:['ingenieria-mecanica-electrica','mantenimiento-preventivo'], caseSlug:'modernizacion-instalacion-industrial' },
-  { name:'Agroindustria', img:'/images/projects/proyecto-2.jpg', needs:['Suministro estable para procesos','Adecuación de carga','Soporte técnico referencial'], solutions:['Transformadores de distribución','Accesorios y regulación','Pruebas y montaje demostrativo'], prods:['VTX-004','VTX-007','VTX-024'], svcs:['instalacion-montaje','pruebas-electricas'], caseSlug:'suministro-transformadores-agroindustria' },
-  { name:'Construcción e infraestructura', img:'/images/projects/proyecto-4.jpg', needs:['Equipamiento para obras y edificaciones','Distribución organizada','Escalabilidad conceptual'], solutions:['Transformadores secos','Celdas y tableros','Consultoría y expedientes'], prods:['VTX-013','VTX-019','VTX-021'], svcs:['consultoria-tecnica','expedientes-tecnicos'], caseSlug:'distribucion-energia-infraestructura-comercial' },
-  { name:'Distribución eléctrica', img:'/images/projects/proyecto-3.jpg', needs:['Protección de red','Gestión de activos','Confiabilidad de suministro'], solutions:['Transformadores de potencia','Protección eléctrica','Mantenimiento y pruebas'], prods:['VTX-010','VTX-011','VTX-023'], svcs:['mantenimiento-preventivo','pruebas-electricas'], caseSlug:'mantenimiento-preventivo-transformadores' },
+  { name:'Industria', img:'/images/products/transformador-trifasico-pad-a.jpg', needs:['Continuidad operativa','Distribución confiable','Control y protección'], solutions:['Transformadores trifásicos','Tableros y regulación','Servicios de mantenimiento e ingeniería'], prods:['VTX-006','VTX-008','VTX-020'], svcs:['ingenieria-mecanica-electrica','mantenimiento-preventivo'], caseSlug:'modernizacion-instalacion-industrial' },
+  { name:'Agroindustria', img:'/images/projects/proyecto-distribucion.jpg', needs:['Suministro estable para procesos','Adecuación de carga','Soporte técnico referencial'], solutions:['Transformadores de distribución','Accesorios y regulación','Pruebas y montaje demostrativo'], prods:['VTX-004','VTX-007','VTX-024'], svcs:['instalacion-montaje','pruebas-electricas'], caseSlug:'suministro-transformadores-agroindustria' },
+  { name:'Construcción e infraestructura', img:'/images/products/transformador-seco-resina-a.jpg', needs:['Equipamiento para obras y edificaciones','Distribución organizada','Escalabilidad conceptual'], solutions:['Transformadores secos','Celdas y tableros','Consultoría y expedientes'], prods:['VTX-013','VTX-019','VTX-021'], svcs:['consultoria-tecnica','expedientes-tecnicos'], caseSlug:'distribucion-energia-infraestructura-comercial' },
+  { name:'Distribución eléctrica', img:'/images/products/transformador-distribucion-630.jpg', needs:['Protección de red','Gestión de activos','Confiabilidad de suministro'], solutions:['Transformadores de potencia','Protección eléctrica','Mantenimiento y pruebas'], prods:['VTX-010','VTX-011','VTX-023'], svcs:['mantenimiento-preventivo','pruebas-electricas'], caseSlug:'mantenimiento-preventivo-transformadores' },
 ];
 
 export default function Solutions() {
   return (
     <>
-      <section className="section" className="section section-dark">
+      <section className="section section-dark">
         <div className="container"><SectionHeading eyebrow="Soluciones" title="Soluciones por industria" text="Enfoques demostrativos para sectores que requieren equipamiento e ingeniería eléctrica confiable." light /></div>
       </section>
       {sectors.map((s, i) => {

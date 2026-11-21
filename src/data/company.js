@@ -22,6 +22,8 @@ export const company = {
     location: 'Jaén, Cajamarca, Perú.',
     email: 'contacto@vortexjfscm.example',
     sales: 'ventas@vortexjfscm.example',
+    institutionalEmail: '2024130023@est.unj.edu.pe',
+    phone: '910 062 007',
     hoursWeek: 'Lunes a viernes: 8:30 a. m. – 6:00 p. m.',
     hoursSat: 'Sábados: 9:00 a. m. – 1:00 p. m.',
   },

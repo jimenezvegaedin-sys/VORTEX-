@@ -15,7 +15,7 @@ export default function About() {
             <h1>Ingeniería, innovación y compromiso con el desarrollo energético.</h1>
             <p>Conoce la propuesta corporativa, organizativa y académica que da forma a VORTEX JFSCM S.A.C. como iniciativa demostrativa en Jaén, Cajamarca.</p>
           </div>
-          <img src="/images/services/servicio-5.jpg" alt="Ingeniería VORTEX" className="split-media" style={{width:"100%",maxHeight:420,objectFit:"cover"}}/>
+          <img src="/images/hero/hero-industrial.jpg" alt="Interior de transformador e ingeniería VORTEX" className="split-media" style={{width:"100%",maxHeight:420,objectFit:"cover"}}/>
         </div>
       </section>
 
@@ -60,7 +60,7 @@ export default function About() {
           <div className="grid" style={{gridTemplateColumns:"repeat(auto-fit,minmax(220px,1fr))"}}>
             {team.map((m,i)=>(
               <div key={m.dni} className="card" style={{textAlign:"center"}}>
-                <div style={{padding:20,background:"var(--gray-surface)"}}><img src={`/images/team/avatar-${i+1}.svg`} alt="Avatar ilustrativo" style={{width:120,height:120,margin:"0 auto",borderRadius:16}}/></div>
+                <div style={{padding:20,background:"var(--gray-surface)"}}><img src={`/images/team/avatar-${(i % 5) + 1}.svg`} alt={`Avatar ilustrativo de ${m.name}`} style={{width:120,height:120,margin:"0 auto",borderRadius:16,objectFit:"cover"}}/></div>
                 <div className="card-body">
                   <h3 style={{fontSize:"1.05rem",marginBottom:4}}>{m.name}</h3>
                   <div style={{color:"var(--oc-red)",fontWeight:700,marginBottom:6,fontFamily:"var(--font-subheading)",textTransform:"uppercase",fontSize:".85rem"}}>{m.role}</div>

@@ -3,7 +3,7 @@
 export default function ProductGallery({ images = [], alt = "Producto" }) {
   const [active, setActive] = useState(0);
   const [zoom, setZoom] = useState(false);
-  const list = images.length ? images : ["/images/products/product-1.jpg"];
+  const list = images.length ? images : ["/images/products/transformador-trifasico-pad-a.jpg"];
   return (
     <div>
       <div className="card" style={{padding:0,background:"var(--bg-soft)",cursor:"zoom-in",overflow:"hidden"}} onClick={()=>setZoom(true)}>
