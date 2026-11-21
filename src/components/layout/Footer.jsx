@@ -5,15 +5,6 @@ import { company } from "../../data/company";
 export default function Footer() {
   return (
     <footer className="site-footer">
-      <div className="footer-cta">
-        <div className="container footer-cta-inner">
-          <div>
-            <h2>Inicia tu consulta</h2>
-            <p>Explora el catálogo demostrativo y prepara una solicitud referencial con la información de tu proyecto.</p>
-          </div>
-          <Link to="/contacto" className="btn btn-light">Contáctanos</Link>
-        </div>
-      </div>
       <div className="container footer-main">
         <div className="footer-col footer-brand">
           <img src="/images/logo-vortex-white.svg" alt="VORTEX JFSCM" className="footer-logo" />

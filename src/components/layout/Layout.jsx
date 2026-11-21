@@ -11,12 +11,6 @@ export default function Layout({ children }) {
   useEffect(() => { document.body.style.overflow = menuOpen ? "hidden" : ""; return () => { document.body.style.overflow = ""; }; }, [menuOpen]);
   return (
     <div className="app-shell">
-      <div className="top-bar">
-        <div className="container top-bar-inner">
-          <span>Proyecto demostrativo — Información simulada</span>
-          <span>Jaén, Cajamarca, Perú · 910 062 007 · contacto@vortexjfscm.example</span>
-        </div>
-      </div>
       <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <ScrollToTop />
       <main>{children}</main>

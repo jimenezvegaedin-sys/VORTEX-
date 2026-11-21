@@ -180,16 +180,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section section-dark" style={{textAlign:"center"}}>
-        <div className="container">
-          <h2 style={{color:"#fff"}}><span style={{color:"var(--oc-red)"}}>Solicita</span> una cotización demostrativa</h2>
-          <p style={{maxWidth:680,margin:"0 auto 24px",color:"#d1d1d1"}}>Explora el catálogo y prepara una solicitud referencial con equipos y servicios de ingeniería eléctrica.</p>
-          <div style={{display:"flex",gap:12,justifyContent:"center",flexWrap:"wrap"}}>
-            <Link to="/productos" className="btn btn-primary">Ver productos</Link>
-            <Link to="/cotizaciones" className="btn btn-outline" style={{borderColor:"#fff",color:"#fff"}}>Preparar cotización</Link>
-          </div>
-        </div>
-      </section>
     </>
   );
 }
