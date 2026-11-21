@@ -5,7 +5,7 @@
 
 /* Header */
 .site-header { position: sticky; top: 0; z-index: 50; background: #fff; border-bottom: 1px solid var(--border); transition: box-shadow var(--transition); }
-.site-header.scrolled { box-shadow: 0 4px 18px rgba(0,0,0,.08); }
+.site-header.scrolled { box-shadow: 0 6px 20px rgba(11,31,51,.10); }
 .header-inner { min-height: 84px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .brand { display: inline-flex; align-items: center; }
 .brand-logo { height: 44px; width: auto; min-width: 180px; display: block; }
@@ -14,7 +14,8 @@
 .nav-link:hover, .nav-link.active { color: var(--oc-red); }
 .nav-link.active::after { content:''; position:absolute; left:0; right:0; bottom:-4px; height:3px; background: var(--oc-red); }
 .header-actions { display: flex; align-items: center; gap: 10px; }
-.menu-toggle { display: none; border: 1px solid var(--border); background: #fff; width: 44px; height: 44px; align-items:center; justify-content:center; color: var(--oc-black); }
+.quote-badge { display:inline-flex; align-items:center; justify-content:center; min-width:22px; height:22px; padding:0 6px; border-radius:999px; background:#fff; color:var(--navy); font-size:.72rem; font-weight:700; }
+.menu-toggle { display: none; border: 1px solid var(--border); background: #fff; width: 44px; height: 44px; align-items:center; justify-content:center; color: var(--oc-black); border-radius: var(--radius-sm); }
 .mobile-panel { position: fixed; inset: 0 0 0 auto; width: min(360px, 100%); background: #fff; box-shadow: var(--shadow-md); padding: 24px; transform: translateX(100%); transition: transform var(--transition); z-index: 60; display:flex; flex-direction:column; gap: 20px; }
 .mobile-panel.open { transform: translateX(0); }
 .mobile-panel-head { display:flex; justify-content:space-between; align-items:center; }

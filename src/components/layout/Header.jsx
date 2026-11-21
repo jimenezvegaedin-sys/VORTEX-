@@ -1,6 +1,8 @@
 ﻿import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import { useQuote } from "../../context/QuoteContext";
+import WhatsAppIcon from "../ui/WhatsAppIcon";
 
 const nav = [
   { to: "/", label: "Inicio" },
@@ -13,6 +15,7 @@ const nav = [
 ];
 
 export default function Header({ menuOpen, setMenuOpen }) {
+  const { items } = useQuote();
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10);
@@ -31,7 +34,7 @@ export default function Header({ menuOpen, setMenuOpen }) {
       <header className={`site-header ${scrolled ? "scrolled" : ""}`}>
         <div className="container header-inner">
           <Link to="/" className="brand" aria-label="VORTEX JFSCM inicio">
-            <img src="/images/logo-vortex.svg" alt="VORTEX JFSCM" className="brand-logo" />
+            <img src="/images/logo-vortex-amber.svg" alt="VORTEX JFSCM" className="brand-logo" />
           </Link>
           <nav className="nav-desktop" aria-label="Principal">
             {nav.map((n) => (
@@ -39,7 +42,10 @@ export default function Header({ menuOpen, setMenuOpen }) {
             ))}
           </nav>
           <div className="header-actions">
-            <Link to="/cotizaciones" className="btn btn-primary header-cta">Cotizar</Link>
+            <Link to="/cotizaciones" className="btn btn-whatsapp header-cta">
+              <WhatsAppIcon size={16} /> Cotizar
+              {items.length > 0 && <span className="quote-badge">{items.length}</span>}
+            </Link>
             <button className="menu-toggle" aria-label={menuOpen ? "Cerrar menú" : "Abrir menú"} aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)}>
               {menuOpen ? <X size={22} /> : <Menu size={22} />}
             </button>
@@ -60,7 +66,10 @@ export default function Header({ menuOpen, setMenuOpen }) {
           <NavLink to="/marco-legal" className="nav-link" onClick={() => setMenuOpen(false)}>Marco legal</NavLink>
           <NavLink to="/preguntas-frecuentes" className="nav-link" onClick={() => setMenuOpen(false)}>Preguntas frecuentes</NavLink>
         </nav>
-        <Link to="/cotizaciones" className="btn btn-primary" onClick={() => setMenuOpen(false)}>Cotizar ahora</Link>
+        <Link to="/cotizaciones" className="btn btn-whatsapp" onClick={() => setMenuOpen(false)}>
+          <WhatsAppIcon size={16} /> Cotizar ahora
+          {items.length > 0 && <span className="quote-badge">{items.length}</span>}
+        </Link>
       </aside>
     </>
   );
