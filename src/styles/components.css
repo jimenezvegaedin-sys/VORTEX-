@@ -5,6 +5,8 @@
 .btn-primary:hover:not(:disabled) { background: var(--oc-red); border-color: var(--oc-red); color:#fff; }
 .btn-secondary { background: var(--oc-red); color:#fff; border-color: var(--oc-red); }
 .btn-secondary:hover:not(:disabled) { background: #b91c15; border-color:#b91c15; }
+.btn-whatsapp { background: #25D366; color: #062e18; border-color: #25D366; }
+.btn-whatsapp:hover:not(:disabled) { background: #1ebe5c; border-color: #1ebe5c; color: #fff; }
 .btn-outline { border-color: var(--oc-black); color: var(--oc-black); background: transparent; }
 .btn-outline:hover:not(:disabled) { background: var(--oc-black); color:#fff; }
 .btn-light { background:#fff; color: var(--oc-black); border-color:#fff; }
